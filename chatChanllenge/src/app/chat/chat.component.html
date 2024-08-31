@@ -1,0 +1,13 @@
+<div class="card mb-3 border-info">
+    <div class="card-header">
+      Sala de chat
+    </div>
+    <div class="card-body">
+       @for (mensaje of chatMessages; track mensaje){
+    <li>{{mensaje.user}}: {{mensaje.text}}</li>
+  }
+    </div>
+  </div>
+
+ 
+  

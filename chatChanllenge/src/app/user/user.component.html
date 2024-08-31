@@ -1,0 +1,15 @@
+<div class="card border-success mb-3">
+    <div class="card-header">
+      Usuario: {{ user }}
+    </div>
+    <div class="card-body">
+      <div class="mb-3">
+        <label for="mensaje-{{ user }}" class="form-label">Mensaje</label>
+        <textarea id="mensaje-{{ user }}" class="form-control" [(ngModel)]="mensajes" rows="3"></textarea>
+      </div>
+      <button class="btn btn-primary" (click)="makeMessage()">Guardar</button>
+    </div>
+  </div>
+
+
+  

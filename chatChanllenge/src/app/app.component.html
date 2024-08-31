@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    <h1>{{ title }}</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <app-user [user]="'Pepe'" (message)="onMessage($event)"></app-user>
+      </div>
+      <div class="col-md-6">
+        <app-user [user]="'Maria'" (message)="onMessage($event)"></app-user>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12">
+        <app-chat [chatMessages]="chatMessages"></app-chat>
+      </div>
+    </div>
+  </div>
+
+  
+  
